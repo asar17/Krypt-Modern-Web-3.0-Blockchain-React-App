@@ -3,6 +3,7 @@ import { BsInfoCircle } from "react-icons/bs";
 import { SiEthereum } from "react-icons/si";
 import Loader from './Loader'
 import {TransactionContext} from '../context/TransactionsContext';
+import {shortenAddress} from '../utils/shortenAddress'
  //msake this const because the divs have the same classes
  const companyCommonStyles = "min-h-[70px] sm:min-w-[120px] sm:px-0 px-2  flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
  //make functin component called Input return jsx [input element] accept placeholder as a paramter
@@ -90,7 +91,7 @@ const Welcome=()=>{
                             {/* second part */}
                             <div>
                                 <p className="text-white font-light text-sm">
-                                  Address
+                                  {shortenAddress(currentAccount)}
                                 </p>
                                 <p className="text-white font-semibold text-lg">
                                   Ethereum
