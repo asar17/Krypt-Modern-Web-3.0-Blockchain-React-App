@@ -22,7 +22,6 @@ import {shortenAddress} from '../utils/shortenAddress'
 const Welcome=()=>{
     //to import global varaiable using state mangement [Context api]
     const {connectWallet,currentAccount,formData,handleChange,sendTransaction,isLoading}=useContext(TransactionContext);
-    console.log('load',isLoading)
     const handleSubmit=(e)=>{
       const {addressTo,amount,keyword,message}=formData;
       e.preventDefault();
@@ -31,9 +30,9 @@ const Welcome=()=>{
     }
     return(
         <div className="bg-black text-white flex w-full justify-center items-center">
-            <div className="flex md:flex-row flex-col  md:p-20 px-4 py-12 ">
+            <div className="flex mf:flex-row flex-col  md:p-20 px-4 py-12 ">
                 {/* first part in the left side */}
-                <div className="flex flex-1 flex-col justify-start items-start md:mr-10">
+                <div className="flex flex-1 flex-col justify-start items-start mf:mr-10">
                     {/*first child*/}
                     <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
                         Buy and sell<br/>trusted Crypto

@@ -11,7 +11,7 @@ export default [
     },
     {
       id: 2,
-      url: "https://media4.popsugar-assets.com/files/2013/11/07/832/n/1922398/eb7a69a76543358d_28.gif",
+      url: "https://www.omnisend.com/blog/wp-content/uploads/2016/09/funny-gifs-9.gif",
       message: "",
       timestamp: "12/21/2021, 4:33:21 PM",
       addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
